@@ -210,6 +210,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.25rem;
+		color: #F9C9C9;
 	}
 
 	h3 {
@@ -303,6 +304,7 @@ input, select, textarea {
 
 		h2 {
 			font-size: 2rem;
+			color: #F9C9C9;
 		}
 
 		h3 {
@@ -2187,8 +2189,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-		color: #000000 !important;
+		box-shadow: inset 0 0 0 1px rgba(191, 78, 156, 0.2);
+		color: #ba4598 !important;
 	}
 
 		input[type="submit"]:hover,
@@ -3456,6 +3458,7 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+		background-color: #f9c9c9;
 	}
 
 		.banner.style1 .content {
@@ -3475,6 +3478,15 @@ input, select, textarea {
 			width: 50%;
 			max-width: 48rem;
 			margin: 0 auto;
+		}
+
+		.banner.style1 figure {
+			margin: 0 0 2.5% 15%;
+		}
+
+		.banner.style1 figure img{
+			height: 300px;
+			border-radius: 50%;
 		}
 
 		.banner.style1 .image {
@@ -4838,6 +4850,14 @@ input, select, textarea {
 
 /* Spotlight (style1) */
 
+	.spotlight.style1 h2 {
+		color: #F9C9C9;
+	}
+
+	.spotlight.style1 p {
+		color: white;
+	}
+
 	.spotlight.style1 {
 		-moz-align-items: -moz-stretch;
 		-webkit-align-items: -webkit-stretch;
@@ -4858,6 +4878,7 @@ input, select, textarea {
 		position: relative;
 		overflow-x: hidden;
 		text-align: left;
+		background-color: #343850;
 	}
 
 		.spotlight.style1 .content {
@@ -4888,7 +4909,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 35%;
+			width: 50%;
 			min-width: 25rem;
 			border-radius: 0;
 		}
