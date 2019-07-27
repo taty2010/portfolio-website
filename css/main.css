@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: radial-gradient(circle, rgb(236, 138, 197) 0%, rgb(49, 50, 123) 100%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -152,7 +152,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		/*background-color: #ffffff;*/
 		color: #000000;
 	}
 
@@ -188,7 +188,9 @@ input, select, textarea {
 	}
 
 		p.major {
-			font-size: 1.25rem;
+			font-size: 1.55rem;
+			color: white;
+			height: 132px;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -196,6 +198,9 @@ input, select, textarea {
 		line-height: 1.375;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
+		font-family: 'Righteous', cursive;
+
+
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -315,6 +320,8 @@ input, select, textarea {
 			font-size: 1rem;
 		}
 
+		
+
 	}
 
 	input, select, textarea {
@@ -334,7 +341,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #32337c;
+
 	}
 
 	blockquote {
@@ -2641,6 +2649,23 @@ input, select, textarea {
 			border-radius: 4px;
 		}
 
+		.imagehover .hover {
+			display: none;
+			left: 0;
+			height: 433px;
+			top: 0;
+		}
+
+		.imagehover:hover .hover {
+			display: block;
+		}
+
+		@media screen and (min-width: 480px) and (max-width: 736px){
+			.imagehover:hover .hover {
+				display: none;
+			}
+		}
+
 		.image.left, .image.right {
 			width: 40%;
 			max-width: 10rem;
@@ -3458,7 +3483,14 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
-		background-color: #f9c9c9;
+		/*background: linear-gradient( 
+			to bottom, hsl(232.31, 23.93%, 31.96%) 0%,
+			 hsl(237.08, 21.39%, 33.07%) 8.1%, 
+			 hsl(250.54, 19.88%, 34.72%) 15.5%, 
+			 hsl(266.58, 19.55%, 36.63%) 22.5%, 
+			 hsl(281.86, 19.22%, 38.96%) 29%, 
+			 hsl(295.14, 18.91%, 41.54%) 35.3%, 
+			 hsl(305.6, 20.18%, 45.05%) 41.2%, hsl(312.11, 22.07%, 49.05%) 47.1%, hsl(316.31, 26.24%, 52.79%) 52.9%, hsl(319.16, 31.49%, 56.22%) 58.8%, hsl(321.16, 36.85%, 59.27%) 64.7%, hsl(322.58, 42.11%, 61.9%) 71%, hsl(323.58, 46.96%, 64.05%) 77.5%, hsl(324.25, 51%, 65.67%) 84.5%, hsl(324.65, 53.75%, 66.7%) 91.9%, hsl(324.78, 54.76%, 67.06%) 100% );*/
 	}
 
 		.banner.style1 .content {
@@ -3478,15 +3510,104 @@ input, select, textarea {
 			width: 50%;
 			max-width: 48rem;
 			margin: 0 auto;
+			background: linear-gradient(to bottom, rgb(50, 51, 124) 10%, rgb(164, 51, 147) 50%, rgb(249, 191, 186) 100%);
 		}
 
 		.banner.style1 figure {
 			margin: 0 0 2.5% 15%;
+			height: 409px;
+			position: relative;
+		}
+
+		.profile {
+			position: relative;
+    		left: 0%;
+    		right: 0%;
 		}
 
 		.banner.style1 figure img{
-			height: 300px;
+			max-height: 300px;
 			border-radius: 50%;
+		}
+		
+
+		.profilehover .phover {
+			display: none;
+			position: absolute;
+			top: 0%;
+			opacity: 0.7;
+			animation-name: glitch;
+			animation-duration: 100ms;
+			animation-iteration-count: 3;
+		}
+/*
+		@media screen and (max-width: 1024px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 10.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+		@media screen and (min-width:1200px) and (max-width: 1440px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 11.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+		@media screen and (min-width:1441px) and (max-width: 1680px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 11.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+
+		@media screen and (min-width:1680px) and (max-width: 1920px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 16.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}*/
+
+		@keyframes glitch {
+			from {opacity: 0;}
+			to {opacity: 0.5;}
+		}
+
+		@media screen and (min-width: 480px) and (max-width: 736px){
+			.profilehover:hover .phover {
+				opacity: 0;
+			}
+
+			@keyframes glitch {
+				from {opacity: 0;}
+				to {opacity: 0;}
+			}
+		}
+
+		.profilehover:hover .phover {
+			display: block;
 		}
 
 		.banner.style1 .image.header{
@@ -3536,6 +3657,7 @@ input, select, textarea {
 
 			.banner.style1 .content {
 				padding: 4rem 4rem 2rem 4rem ;
+				height: 912px;
 			}
 
 		}
@@ -3607,6 +3729,13 @@ input, select, textarea {
 
 				.banner.style1.fullscreen .image {
 					height: 50vh;
+					display: none;
+				}
+
+				.banner.style1 figure img {
+					height: 200px;
+					margin-bottom: 5vh;
+					border-radius: 50%;
 				}
 
 			}
@@ -4886,7 +5015,6 @@ input, select, textarea {
 		position: relative;
 		overflow-x: hidden;
 		text-align: left;
-		background-color: #343850;
 	}
 
 		.spotlight.style1 .content {
@@ -4906,7 +5034,7 @@ input, select, textarea {
 			width: 65%;
 			max-width: 64rem;
 			margin: 0 auto;
-			border: 2px solid #f9c9c9;
+			background-color: #393b46;
 		}
 
 		.spotlight.style1 .image {
@@ -4918,7 +5046,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 60%;
+			width: 50%;
 			min-width: 25rem;
 			border-radius: 0;
 		}
@@ -4939,7 +5067,6 @@ input, select, textarea {
 				width: 100%;
 				height: 100%;
 				border-radius: 0;
-				border: 2px solid #f9c9c9;
 			}
 
 		@media screen and (max-width: 1680px) {
@@ -7247,11 +7374,11 @@ input, select, textarea {
 		padding: 7rem 3.5rem 5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
-		width: 64rem;
+		background-color: #f9bfba;
 	}
 
 		.wrapper.style1 > .inner.medium {
-			width: 48rem;
+			/*width: 48rem;*/
 		}
 
 		.wrapper.style1 > .inner.small {
@@ -8282,7 +8409,8 @@ input, select, textarea {
 
 	#wrapper {
 		background-color: inherit;
-		width: 100%;
+		width: 95%;
+		margin: 0 auto;
 		overflow-x: hidden;
 	}
 
