@@ -2641,6 +2641,20 @@ input, select, textarea {
 			border-radius: 4px;
 		}
 
+		.imagehover .hover {
+			display: none;
+			background-image: url(../images/unplugged-glitch.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			left: 0;
+			height: 433px;
+			top: 0;
+		}
+
+		.imagehover:hover .hover {
+			display: block;
+		}
+
 		.image.left, .image.right {
 			width: 40%;
 			max-width: 10rem;
@@ -3496,6 +3510,25 @@ input, select, textarea {
 		.banner.style1 figure img{
 			height: 300px;
 			border-radius: 50%;
+		}
+
+		.profilehover .phover {
+			display: none;
+			position: absolute;
+			top: 8.7%;
+			opacity: 0.7;
+			animation-name: glitch;
+			animation-duration: 100ms;
+			animation-iteration-count: 2;
+		}
+
+		@keyframes glitch {
+			from {opacity: 0;}
+			to {opacity: 0.5;}
+		}
+
+		.profilehover:hover .phover {
+			display: block;
 		}
 
 		.banner.style1 .image.header{
