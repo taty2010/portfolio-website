@@ -188,7 +188,9 @@ input, select, textarea {
 	}
 
 		p.major {
-			font-size: 1.25rem;
+			font-size: 1.55rem;
+			color: white;
+			height: 132px;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -196,6 +198,9 @@ input, select, textarea {
 		line-height: 1.375;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
+		font-family: 'Righteous', cursive;
+
+
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -334,7 +339,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #32337c;
+
 	}
 
 	blockquote {
@@ -3499,8 +3505,7 @@ input, select, textarea {
 			width: 50%;
 			max-width: 48rem;
 			margin: 0 auto;
-			background: radial-gradient(circle, rgb(236, 138, 197) 0%, rgb(49, 50, 123) 100%);
-
+			background: linear-gradient(to bottom, rgb(50, 51, 124) 10%, rgb(164, 51, 147) 50%, rgb(249, 191, 186) 100%);
 		}
 
 		.banner.style1 figure {
