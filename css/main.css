@@ -3509,10 +3509,18 @@ input, select, textarea {
 
 		.banner.style1 figure {
 			margin: 0 0 2.5% 15%;
+			height: 409px;
+			position: relative;
+		}
+
+		.profile {
+			position: relative;
+    		left: 0%;
+    		right: 0%;
 		}
 
 		.banner.style1 figure img{
-			height: 300px;
+			max-height: 300px;
 			border-radius: 50%;
 		}
 		
@@ -3520,13 +3528,13 @@ input, select, textarea {
 		.profilehover .phover {
 			display: none;
 			position: absolute;
-			top: 8.7%;
+			top: 0%;
 			opacity: 0.7;
 			animation-name: glitch;
 			animation-duration: 100ms;
-			animation-iteration-count: 2;
+			animation-iteration-count: 3;
 		}
-
+/*
 		@media screen and (max-width: 1024px){
 			.profilehover .phover {
 				display: none;
@@ -3574,7 +3582,7 @@ input, select, textarea {
 				animation-duration: 100ms;
 				animation-iteration-count: 2;
 			}
-		}
+		}*/
 
 		@keyframes glitch {
 			from {opacity: 0;}
@@ -3643,6 +3651,7 @@ input, select, textarea {
 
 			.banner.style1 .content {
 				padding: 4rem 4rem 2rem 4rem ;
+				height: 912px;
 			}
 
 		}
