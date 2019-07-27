@@ -3581,6 +3581,17 @@ input, select, textarea {
 			to {opacity: 0.5;}
 		}
 
+		@media screen and (min-width: 480px) and (max-width: 736px){
+			.profilehover:hover .phover {
+				opacity: 0;
+			}
+
+			@keyframes glitch {
+				from {opacity: 0;}
+				to {opacity: 0;}
+			}
+		}
+
 		.profilehover:hover .phover {
 			display: block;
 		}
