@@ -320,6 +320,8 @@ input, select, textarea {
 			font-size: 1rem;
 		}
 
+		
+
 	}
 
 	input, select, textarea {
@@ -2649,9 +2651,6 @@ input, select, textarea {
 
 		.imagehover .hover {
 			display: none;
-			background-image: url(../images/unplugged-glitch.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
 			left: 0;
 			height: 433px;
 			top: 0;
@@ -3516,6 +3515,7 @@ input, select, textarea {
 			height: 300px;
 			border-radius: 50%;
 		}
+		
 
 		.profilehover .phover {
 			display: none;
@@ -3525,6 +3525,55 @@ input, select, textarea {
 			animation-name: glitch;
 			animation-duration: 100ms;
 			animation-iteration-count: 2;
+		}
+
+		@media screen and (max-width: 1024px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 10.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+		@media screen and (min-width:1200px) and (max-width: 1440px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 11.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+		@media screen and (min-width:1441px) and (max-width: 1680px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 11.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
+		}
+
+
+		@media screen and (min-width:1680px) and (max-width: 1920px){
+			.profilehover .phover {
+				display: none;
+				position: absolute;
+				top: 16.2%;
+				opacity: 0.7;
+				animation-name: glitch;
+				animation-duration: 100ms;
+				animation-iteration-count: 2;
+			}
 		}
 
 		@keyframes glitch {
