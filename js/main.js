@@ -4,6 +4,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$(document).ready(function(){
+	$('#wrapper').css('display', 'none');
+	$('#wrapper').fadeIn(1000);
+
+	$('#art-page').click(function(){
+		$('#main-header').addClass('animated fadeOutRight');
+		$('#art-header').fadeIn('slow');
+		$('body').css({'background-color':'white', 'background': 'radial-gradient(circle, rgb(236, 138, 197) 0%, rgb(49, 50, 123) 100%)'});
+		$('.wrapper.style1 > .inner, .spotlight.style1 .content').css('background-color','#f9bfba');
+		$('#hero').removeClass('content').addClass('content2');
+		$('p.major, .spotlight.style1 p').css('color', 'white');
+		$('.spotlight.style1 h2').css('color', '#32337c')
+		
+
+	});
+
+	function newPage(){
+		window.location = newLocation;
+	}
+});
+
 (function($) {
 
 	var	$window = $(window),
