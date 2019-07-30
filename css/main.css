@@ -2856,6 +2856,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
@@ -2863,6 +2864,9 @@ input, select, textarea {
 				flex-direction: column;
 				margin-left: 0;
 				width: 100% !important;
+				position: relative;
+				left: 0;
+				top: 0;
 			}
 
 				ul.actions:not(.fixed) li {
@@ -2877,6 +2881,10 @@ input, select, textarea {
 					padding: 1rem 0 0 0;
 					text-align: center;
 					width: 100%;
+					display: block;
+    				position: absolute;
+    				left: -10%;
+    				top: 0;
 				}
 
 					ul.actions:not(.fixed) li > * {
@@ -3532,7 +3540,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			width: 50%;
+			/*width: 50%;*/
 			max-width: 48rem;
 			margin: 0 auto;
 			background: linear-gradient(to bottom, rgb(50, 51, 124) 10%, rgb(164, 51, 147) 50%, rgb(249, 191, 186) 100%);
@@ -3709,6 +3717,7 @@ input, select, textarea {
 
 			.banner.style1 figure {
 				margin: 0 ;
+				height: auto;
 			}
 
 		}

@@ -33,6 +33,8 @@ $(document).ready(function(){
 		$('.spotlight.style1 h2').css('color', '#F9C9C9');
 		$('#dev-page').css('display', 'none');
 		$('#art-page').css('display', 'block');
+		$('#art-page, .main-port').css('display', 'block');
+		$('#dev-page, .art-port').css('display', 'none');
 	});
 
 	
