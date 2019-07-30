@@ -2099,6 +2099,10 @@ input, select, textarea {
 
 /* Button */
 
+	#dev-page{
+		display: none;
+	}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -3511,7 +3515,7 @@ input, select, textarea {
 			width: 50%;
 			max-width: 48rem;
 			margin: 0 auto;
-			background: linear-gradient(to bottom, rgb(203, 186, 192) 10%, rgb(234, 225, 230) 50%, rgb(251, 248, 248) 100%);
+			background-color: white;
 		}
 
 		.banner.style1 .content2 {
@@ -5042,6 +5046,10 @@ input, select, textarea {
 		position: relative;
 		overflow-x: hidden;
 		text-align: left;
+	}
+
+	.content.art-port, .image.art-port {
+		display: none;
 	}
 
 		.spotlight.style1 .content {

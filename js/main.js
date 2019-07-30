@@ -8,17 +8,34 @@ $(document).ready(function(){
 	$('#wrapper').css('display', 'none');
 	$('#wrapper').fadeIn(1000);
 
+	let artPage = true;
+
 	$('#art-page').click(function(){
+		artPage === false;	
 		$('#main-header').addClass('animated fadeOutRight');
 		$('#art-header').fadeIn('slow');
 		$('body').css({'background-color':'white', 'background': 'radial-gradient(circle, rgb(236, 138, 197) 0%, rgb(49, 50, 123) 100%)'});
 		$('.wrapper.style1 > .inner, .spotlight.style1 .content').css('background-color','#f9bfba');
 		$('#hero').removeClass('content').addClass('content2');
 		$('p.major, .spotlight.style1 p').css('color', 'white');
-		$('.spotlight.style1 h2').css('color', '#32337c')
-		
-
+		$('.spotlight.style1 h2').css('color', '#32337c');
+		$('#art-page, .main-port').css('display', 'none');
+		$('#dev-page, .art-port').css('display', 'block');
 	});
+
+	$('#dev-page').click(function(){
+		$('#art-header').css('display', 'none');
+		$('#main-header').removeClass('animated fadeOutRight');
+		$('body').css({'background-color':'white', 'background': 'none'});
+		$('.wrapper.style1 > .inner, .spotlight.style1 .content').css('background-color','white');
+		$('#hero').removeClass('content2').addClass('content');
+		$('p.major, .spotlight.style1 p').css('color', 'black');
+		$('.spotlight.style1 h2').css('color', '#F9C9C9');
+		$('#dev-page').css('display', 'none');
+		$('#art-page').css('display', 'block');
+	});
+
+	
 
 	function newPage(){
 		window.location = newLocation;
